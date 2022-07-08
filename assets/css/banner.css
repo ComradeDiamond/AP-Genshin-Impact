@@ -1,4 +1,150 @@
+/*Root color init*/
+:root
+{
+    --college-board-black: #221f1f;
+    --college-board-blue: #009cde;
+    --college-board-grey: #c1c1c1;
+    --cb-font-family: Roboto,sans-serif;
+    overflow: auto;
+}
+
+body
+{
+    margin: 0;
+}
+
+/*I think they call this a global header*/
 #cb-banner
 {
-    border-top: 2em solid #009cde;
+    border-top: 5px solid var(--college-board-blue);
+    text-align: center;
 }
+
+.banner-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+::before, ::after
+{
+    box-sizing: border-box;
+}
+
+.no-shrink
+{
+    flex-shrink: 0;
+}
+
+.cbBox, .signBox
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu-control
+{
+    background-color: var(--college-board-black);
+}
+
+.menu-control a
+{
+    display: block;
+    border-right: 1px solid gray;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    text-decoration: none;
+    cursor: pointer;
+    font: 18pt var(--cb-font-family);
+}
+
+.arrow-down
+{
+    border-style: solid;
+    border-color: var(--college-board-grey);
+    border-width: 0px 3px 3px 0px;
+    padding: 4px;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.cb-logo, .ap-logo
+{
+    height: 100%;
+}
+
+.cb-logo img, .ap-logo img
+{
+    height: 44px;
+}
+
+.ap-logo img
+{
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: var(--college-board-blue);
+}
+
+.transparent
+{
+    background-color: transparent;
+}
+
+.self-align
+{
+    align-self: center;
+}
+
+.login-box
+{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #221f1f;
+    height: 100%;
+    padding-right: 4px;
+    padding-left: 4px;
+    margin-left: 4px;
+    margin-right: 0px;
+    min-width: 44px;
+}
+
+.login-box .sign-in
+{
+    color: inherit;
+    font: bold 16px var(--cb-font-family);
+}
+
+.glyph
+{
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    line-height: 1;
+    box-sizing: border-box;
+}
+
+/*.glyph::before
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "a";
+    display: block;
+    background: url("../images/user.png") no-repeat;
+    float: left;
+    width: 20px;
+    height: 20px;
+}*/

@@ -1,5 +1,5 @@
 # AP-Genshin-Impact
 Haha Heizou catalyst go bonk
-
-Idea from this guy
+<br />
+Idea from this guy <br />
 <img src="https://i.imgur.com/Gq1lSZi.png" />

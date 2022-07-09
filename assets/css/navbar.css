@@ -35,3 +35,30 @@
     margin: 0;
     text-decoration: none;
 }
+
+.nav-items
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li
+{
+    padding: 36px 12px 0 12px;
+    margin: 0;
+    list-style-type: none;
+    list-style-image: none;
+    display: inline-block;
+}
+
+.nav-link-object
+{
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    height: 36px;
+    display: inline-block;
+    line-height: 2em;
+    font-size: .875rem;
+}

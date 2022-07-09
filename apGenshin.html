@@ -2,10 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="./assets/css/banner.css" />
+        <link rel="stylesheet" href="./assets/css/navbar.css" />
     </head>
     <body>
-        <div id="cb-banner" role="banner" tabindex="=1">
-            <div class="banner-content no-shrink">
+        <div id="cb-banner" role="banner" tabindex="1">
+            <div class="banner-content dpad no-shrink">
                 <div class="cbBox">
                     <div class="menu-control" aria-label="Open navbar">
                         <a>
@@ -36,12 +37,24 @@
                             autocapitalize="off"
                             placeholder="Search"
                             class="search-input"
+                            tabindex="2"
                         />
                         <a aria-label="Search" class="search-btn">
                             <img src="./assets/images/search.png" />
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="navbar" role="navigation">
+            <div class="dpad no-shrink">
+                <nav aria-label="Navigation Selection" class="cb-nav">
+                    <span aria-label="AP Students container" class="ap-title-container">
+                        <a>
+                            AP Students
+                        </a>
+                    </span>
+                </nav>
             </div>
         </div>
     </body>

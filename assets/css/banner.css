@@ -27,17 +27,21 @@ body
     height: 44px;
 }
 
+.dpad
+{
+    height: 100%;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
 .banner-content
 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    height: 100%;
-    margin-left: 7%;
-    margin-right: 7%;
-    padding-left: 3%;
-    padding-right: 3%;
 }
 
 ::before, ::after, .bbox

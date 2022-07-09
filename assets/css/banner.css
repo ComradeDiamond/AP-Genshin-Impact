@@ -13,11 +13,18 @@ body
     margin: 0;
 }
 
+.noDrag
+{
+    -webkit-user-drag: none;
+}
+
 /*I think they call this a global header*/
 #cb-banner
 {
     border-top: 5px solid var(--college-board-blue);
     text-align: center;
+    border-bottom: 2px solid #ccc;
+    height: 44px;
 }
 
 .banner-content
@@ -29,9 +36,11 @@ body
     height: 100%;
     margin-left: 7%;
     margin-right: 7%;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-::before, ::after
+::before, ::after, .bbox
 {
     box-sizing: border-box;
 }
@@ -75,12 +84,7 @@ body
     transform: rotate(45deg);
 }
 
-.cb-logo, .ap-logo
-{
-    height: 100%;
-}
-
-.cb-logo img, .ap-logo img
+.cb-logo img, .ap-logo img, .cb-logo, .ap-logo
 {
     height: 44px;
 }
@@ -102,10 +106,14 @@ body
     align-self: center;
 }
 
-.login-box
+.login-box, .search-box
 {
     display: flex;
     align-items: center;
+}
+
+.login-box
+{
     text-decoration: none;
     color: #221f1f;
     height: 100%;
@@ -114,37 +122,80 @@ body
     margin-left: 4px;
     margin-right: 0px;
     min-width: 44px;
+    cursor: pointer;
 }
 
 .login-box .sign-in
 {
     color: inherit;
-    font: bold 16px var(--cb-font-family);
+    font: bold 14px var(--cb-font-family);
+}
+
+.sign-in
+{
+    margin-right: 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .glyph
 {
-    position: relative;
     display: inline-block;
+    font-size: 32px !important;
+    background-color: black;
+    
     width: 1em;
     height: 1em;
+
     border-radius: 50%;
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
     line-height: 1;
-    box-sizing: border-box;
 }
 
-/*.glyph::before
+.userPhoto
 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    content: "a";
-    display: block;
-    background: url("../images/user.png") no-repeat;
-    float: left;
-    width: 20px;
-    height: 20px;
-}*/
+    width: 60%;
+    height: 60%;
+    margin: auto;
+}
+
+.search-box
+{
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 0px;
+    border-bottom: 3px solid #000;
+}
+
+.search-input
+{
+    text-shadow: none;
+    box-shadow: none;
+    height: 32px;
+    width: auto;
+    line-height: 32px;
+    padding: 0px 15px 0px 15px; /*Someone read CB site's box model again I'm bad at doing that*/
+    display: inline;
+    outline: 0px;
+    font: 16px var(--cb-font-family);
+    color: black;
+    border: none;
+}
+
+.search-btn
+{
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 5px;
+    margin-top: 1px;
+}
+
+.search-btn img
+{
+    line-height: 32px;
+    width: 100%;
+    height: 100%;
+}

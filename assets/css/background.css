@@ -1,3 +1,15 @@
+@font-face 
+{
+    font-family: "Roboto Slab";
+    src: url("./fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face 
+{
+    font-family: "Roboto Slab Bold";
+    src: url("./fonts/RobotoSlab-Bold.ttf");
+}
+
 #background
 {
     text-align: center;
@@ -10,9 +22,68 @@
 
 .background-container /*Divs by default 100% so only use divs for this*/
 {
-    min-height: 384px;
+    height: 384px;
     margin-left: 8%;
     margin-right: 8%;
     padding-left: 2%;
     padding-right: 2%;
+}
+
+.flex-center
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-content
+{
+    width: 100%;
+    margin: 48px 0 24px 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+.background-title
+{
+    font-size: 2.625rem;
+    line-height: 1.15em;
+    margin-bottom: 12px;
+}
+
+.background-content p
+{
+    font-size: 1.19rem;
+    line-height: 1.25em;
+    margin-bottom: 36px;
+}
+
+.background-btns
+{
+    text-align: center;
+}
+
+.background-btns .btn1, .background-btns .btn2
+{
+    margin: 0 12px 24px 12px;
+    padding: 11px 18px;
+    line-height: 1.7em;
+    font: .875rem "Roboto Slab Bold";
+    cursor: pointer;
+}
+
+.background-btns .btn1
+{
+    background-color: #fedb00;
+    border: 1px solid #fedb00;
+    color: black;
+}
+
+.background-btns .btn2
+{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }

@@ -1,0 +1,18 @@
+#background
+{
+    text-align: center;
+    background-color: #1e8eda;
+    background-image: url("../images/LumenstoneL.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.background-container /*Divs by default 100% so only use divs for this*/
+{
+    min-height: 384px;
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 2%;
+    padding-right: 2%;
+}

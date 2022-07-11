@@ -30,6 +30,7 @@ body
 
 .dpad
 {
+    width: 74%; /*Do maths for this*/
     height: 100%;
     margin-left: 10%;
     margin-right: 10%;

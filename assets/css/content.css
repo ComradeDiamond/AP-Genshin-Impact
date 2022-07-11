@@ -1,0 +1,73 @@
+@font-face 
+{
+    font-family: "Roboto Slab";
+    src: url("./fonts/RobotoSlab-Regular.ttf");
+}
+
+@font-face 
+{
+    font-family: "Roboto Slab Bold";
+    src: url("./fonts/RobotoSlab-Bold.ttf");
+}
+
+.main-dp
+{
+    margin-left: 14%;
+    margin-right: 14%;
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 42%;
+}
+
+@media (max-width: 1450px)
+{
+    .main-dp
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-left: 15%;
+        padding-right: 15%;
+        width: 50%;
+    }
+}
+
+#main-content
+{
+    box-sizing: border-box;
+}
+
+#not-a-student
+{
+    padding: 12px;
+    border: 0px;
+    background-color: #f0f0f0;
+    color: var(--college-board-text-black);
+    margin-bottom: 24px;
+}
+
+.not-student-content div
+{
+    font: 1rem "Roboto Slab Bold";
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+.not-student-content p, .not-student-content .link
+{
+    font: .875rem "Roboto",sans-serif;
+    line-height: 1.7em;
+    margin: 0px;
+}
+
+.not-student-content .link
+{
+    font-weight: bold;
+}
+
+.link /*Use for all generic links*/
+{
+    color: #0077c8;
+    text-decoration: none;
+    font-family: "Roboto",sans-serif;
+    background-color: transparent;
+}

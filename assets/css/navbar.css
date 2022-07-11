@@ -32,7 +32,7 @@
     font-size: 1.4rem;
     line-height: 1.04em;
     padding: 0;
-    color: #1e1e1e;
+    color: var(--college-board-default-black);
     margin: 0;
     text-decoration: none;
 }
@@ -75,7 +75,7 @@
 
 .nav-hl
 {
-    border-bottom: 2px solid #1e1e1e;
+    border-bottom: 2px solid var(--college-board-default-black);
 }
 
 #navLocation

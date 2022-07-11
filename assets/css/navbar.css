@@ -4,7 +4,7 @@
     src: url("./fonts/RobotoSlab-Bold.ttf");
 }
 
-#navbar
+#navbar, #navLocation
 {
     border-bottom: 1px solid #d9d9d9;
     background: #fff;
@@ -61,4 +61,61 @@
     display: inline-block;
     line-height: 2em;
     font-size: .875rem;
+    font-size: 14px;
+}
+/*Add a span above image and then pad it*/
+.nav-link-img
+{
+    display: inline-block;
+    width: 1rem;
+    height: auto;
+    margin: auto;
+}
+
+.nav-hl
+{
+    border-bottom: 2px solid #1e1e1e;
+}
+
+#navLocation
+{
+    border: none;
+}
+
+.nav-loc-list
+{
+    margin: 24px 0 24px 0;
+    padding: 0px;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-loc-list > li
+{
+    display: inline-block;
+    height: 24px;
+    line-height: 1.5em; /*Might be too much*/
+    overflow-y: visible;
+    white-space: nowrap;
+}
+
+.nav-loc-link
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0077c7;  
+    font-size: 1rem;
+}
+
+.nav-loc-link.nav-loc-current
+{
+    color: black;
+}
+
+.nav-loc-list > li + li::before 
+{
+    padding: 0 10px 0 10px;
+    color: #292929;
+    content: "/";
+    font-size: 1rem;
 }

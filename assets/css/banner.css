@@ -6,14 +6,27 @@
     --college-board-default-black: #1e1e1e;
     --college-board-blue: #009cde;
     --college-board-grey: #c1c1c1;
-    --cb-font-family: Roboto,sans-serif;
+    --cb-font-family: "Roboto",sans-serif;
     overflow: auto;
+}
+
+@font-face 
+{
+    font-family: "Roboto";
+    src: url("./fonts/Roboto-Regular.ttf");
 }
 
 body
 {
     margin: 0;
     font-family: var(--cb-font-family);
+    text-size-adjust: 100%;
+}
+
+br
+{
+    display: block;
+    height: 24px;
 }
 
 .noDrag

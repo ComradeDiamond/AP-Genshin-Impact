@@ -6,6 +6,7 @@
     --college-board-default-black: #1e1e1e;
     --college-board-blue: #009cde;
     --college-board-grey: #c1c1c1;
+    --college-board-light-grey: #d9d9d9;
     --cb-font-family: "Roboto",sans-serif;
     overflow: auto;
 }

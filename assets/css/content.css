@@ -197,3 +197,24 @@
     
     content: "\e90b";
 }*/
+
+.border-top
+{
+    border-top: 1px solid var(--college-board-light-grey);
+    padding-top: 23px;
+}
+
+.h4-header
+{
+    font-family: "Roboto Slab Bold",sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+.eq-flex
+{
+    flex-direction: column !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}

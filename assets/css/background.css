@@ -10,7 +10,7 @@
     src: url("./fonts/RobotoSlab-Bold.ttf");
 }
 
-#background
+#background, #background2
 {
     text-align: center;
     background-color: #1e8eda;
@@ -18,6 +18,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
+}
+
+#background2
+{
+    background-image: url("https://apstudents.collegeboard.org/modules/site/apstudent_course/images/CreditS-oversized.png");
+}
+
+.credit-background
+{
+    height: auto !important;
 }
 
 .background-container /*Divs by default 100% so only use divs for this*/
@@ -65,7 +75,7 @@
     text-align: center;
 }
 
-.background-btns .btn1, .background-btns .btn2
+.background-btns .btn1, .btn2
 {
     margin: 0 12px 24px 12px;
     padding: 12px 18px;
@@ -81,9 +91,82 @@
     color: black;
 }
 
-.background-btns .btn2
+.btn2
 {
     background-color: transparent;
     border: 1px solid white;
     color: white;
+}
+
+.ap-phone-img, .ap-credit-text
+{
+    width: 33%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ap-credit-text
+{
+    text-align: left;
+}
+
+.ap-phone-img
+{
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    line-height: 24px;
+    max-width: 100%;
+    width: 362px;
+    height: 550px;
+}
+
+.credit-box
+{
+    align-items: center !important;
+}
+
+.ap-search-icon
+{
+    margin: 48px 0px 6px 0px;
+}
+
+.ap-search-title
+{
+    margin-bottom: 48px;
+    color: white;
+    border-color: white;
+}
+
+.white-h2
+{
+    border-top: 1px solid white;
+    padding-top: 12px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Roboto Slab Bold",sans-serif;
+    line-height: 1.125em;
+}
+
+.ap-search-title p
+{
+    margin: 12px 0px 0px 0px;
+    text-align: left;
+
+    font: 400 1.19rem var(--cb-font-family);
+    line-height: 1.27em;
+}
+
+
+.ap-search-btn-div
+{
+    margin-bottom: 48px;
+}
+
+.ap-search-btn-div button
+{
+    padding: 11px 31px 11px 31px;
+    font-size: .875rem;
+    margin: 0px;
 }

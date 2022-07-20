@@ -19,7 +19,7 @@
     width: 46%;
 }
 
-@media (max-width: 1500px)
+@media (max-width: 1550px)
 {
     .main-dp
     {
@@ -229,6 +229,12 @@
     padding-right: 0px !important;
 }
 
+.center-flex
+{
+    align-items: center !important;
+    justify-content: center !important;
+}
+
 .exam-div
 {
     display: flex;
@@ -362,7 +368,8 @@
 .unit
 {
     border: 0px;
-    margin-bottom: 0px;
+    border-top: 1px solid var(--college-board-light-grey);
+    border-bottom: 0.1px solid transparent;
     border-radius: 0px;
     color: var(--college-board-text-black);
     font: 0.875rem, var(--cb-font-family);
@@ -377,8 +384,8 @@
 
 .unit-visible
 {
-    min-height: auto;
     font-size: 1rem;
+    min-height: 71px;
 }
 
 .unit-title
@@ -404,10 +411,20 @@
 
 .unit-text
 {
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
     margin-top: -24px;
     width: calc(100% - 64px);
     padding: 0px 16px;
     font-size: .875rem;
     line-height: 1.7em;
+}
+
+.pad-btm
+{
+    margin-bottom: 2em;
+}
+
+#unit-explanation
+{
+    border: 0.1px solid transparent;
 }
